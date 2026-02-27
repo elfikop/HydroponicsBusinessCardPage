@@ -13,17 +13,20 @@
 
     <header>
         <nav>
-            <div class="logo">Hydroponika<span>Zestawy.pl</span></div>
-            <button class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul id="nav-list">
-                <li><a href="#o-nas">O projekcie</a></li>
-                <li><a href="#oferta">Zestawy</a></li>
-                <li><a href="#akcesoria">Akcesoria</a></li>
-                <li><a href="#kontakt">Kontakt/Media</a></li>
-            </ul>
-        </nav>
+    <div class="logo">
+        <img src="logo.jpg" alt="Logo HydroponikaZestawy.pl" class="logo-img">
+        Hydroponika<span>Zestawy.pl</span>
+    </div>
+    <button class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    <ul id="nav-list">
+        <li><a href="#o-nas">O projekcie</a></li>
+        <li><a href="#oferta">Zestawy</a></li>
+        <li><a href="#akcesoria">Akcesoria</a></li>
+        <li><a href="#kontakt">Kontakt/Media</a></li>
+    </ul>
+    </nav>
         <div class="hero">
             <h1>Uprawiaj wyżej, nie szerzej. 🌿</h1>
             <p>Autorskie wieże hydroponiczne do Twojego domu. Kompletne zestawy gotowe do startu.</p>
@@ -59,8 +62,7 @@
             </p>
             <div class="info-alert">
                 <i class="fas fa-info-circle"></i> 
-                Pamiętaj: strona ma charakter informacyjny. Po kliknięciu w wybrany zestaw zostaniesz 
-                bezpiecznie przekierowany do zakupu na <strong>Allegro/OLX</strong>.
+                Pamiętaj: strona ma charakter informacyjny. **Szczegółowe parametry techniczne, instrukcje oraz wymiary znajdziesz w opisach naszych aukcji** po przejściu do serwisu Allegro/OLX.
             </div>
         </div>
             <div class="story-features">
@@ -92,6 +94,7 @@
                         <img src="standard2.jpg" onclick="updateImage('mainViewStandard', 'standard2.jpg')">
                         <img src="koszyczki.jpg" onclick="updateImage('mainViewStandard', 'koszyczki.jpg')">
                         <img src="kermazyt.png" onclick="updateImage('mainViewStandard', 'kermazyt.png')">
+                        <img src="zasilacz.png" onclick="updateImage('mainViewStandard', 'zasilacz.png')">
                     </div>
                 </div>
                 <div class="product-info">
@@ -101,7 +104,7 @@
                     <ul class="product-list">
                         <li><i class="fas fa-check"></i> 2 Moduły (12 otworów)</li>
                         <li><i class="fas fa-check"></i> 12 koszyczków + keramzyt</li>
-                        <li><i class="fas fa-check"></i> Pompa wody, rurka i śruby</li>
+                        <li><i class="fas fa-check"></i> Pompa wody, Zasilacz, rurka i śruby</li>
                         <li><i class="fas fa-check"></i> Kompletny zestaw gotowy do startu</li>
                     </ul>
                     <div class="price">145 zł</div>
@@ -122,6 +125,7 @@
                         <img src="nano_glowny.png" onclick="updateImage('mainViewNano', 'nano_glowny.png')">
                         <img src="koszyczki.jpg" onclick="updateImage('mainViewNano', 'koszyczki.jpg')">
                         <img src="kermazyt.png" onclick="updateImage('mainViewNano', 'kermazyt.png')">
+                        <img src="zasilacz.png" onclick="updateImage('mainViewStandard', 'zasilacz.png')">
                     </div>
                 </div>
                 <div class="product-info">
@@ -131,7 +135,7 @@
                     <ul class="product-list">
                         <li><i class="fas fa-check"></i> 1 Moduł (6 otworów)</li>
                         <li><i class="fas fa-check"></i> 6 koszyczków + keramzyt</li>
-                        <li><i class="fas fa-check"></i> Kompletna elektronika (pompa, rurki)</li>
+                        <li><i class="fas fa-check"></i> Kompletna elektronika (pompa, rurki, zasilacz)</li>
                     </ul>
                     <div class="price">99 zł</div>
                     <div class="product-actions">
@@ -151,6 +155,7 @@
                         <img src="max_detal.png" onclick="updateImage('mainViewMax', 'max_detal.png')">
                         <img src="koszyczki.jpg" onclick="updateImage('mainViewMax', 'koszyczki.jpg')">
                         <img src="kermazyt.png" onclick="updateImage('mainViewMax', 'kermazyt.png')">
+                        <img src="zasilacz.png" onclick="updateImage('mainViewStandard', 'zasilacz.png')">
                     </div>
                 </div>
                 <div class="product-info">
@@ -160,7 +165,7 @@
                     <ul class="product-list">
                         <li><i class="fas fa-check"></i> Wieża XL (3 moduły, 18 otworów)</li>
                         <li><i class="fas fa-check"></i> 18 koszyczków + keramzyt</li>
-                        <li><i class="fas fa-check"></i> Dłuższa rurka i pełny zestaw śrub</li>
+                        <li><i class="fas fa-check"></i> Kompletna elektronika (pompa, rurki, zasilacz)</li>
                     </ul>
                     <div class="price">199 zł</div>
                     <div class="product-actions">
@@ -178,7 +183,6 @@
                     <div class="thumbnails">
                         <img src="modul_glowny.png" onclick="updateImage('mainViewModul', 'modul_glowny.png')">
                         <img src="koszyczki.jpg" onclick="updateImage('mainViewModul', 'koszyczki.jpg')">
-                        <img src="sruby_detal.jpg" onclick="updateImage('mainViewModul', 'sruby_detal.jpg')">
                     </div>
                 </div>
                 <div class="product-info">
@@ -270,7 +274,7 @@
                 <h3>Kontakt bezpośredni</h3>
                 <div class="direct-links">
                     <a href="tel:+48665339661" class="contact-link"><i class="fas fa-phone"></i> +48 665 339 661</a>
-                    <a href="mailto:kontakt@hydroponikazestawy.pl" class="contact-link"><i class="fas fa-envelope"></i> kontakt@hydroponikazestawy.pl</a>
+                    <a href="mailto:sewerynpastuch@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> sewerynpastuch@gmail.com</a>
                 </div>
             </div>
         </div>

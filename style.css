@@ -25,7 +25,7 @@ body {
     padding-top: 80px; /* Miejsce na stałe menu */
 }
 
-/* --- NAWIGACJA Z MENU MOBILNYM --- */
+/* --- NAWIGACJA Z MENU MOBILNYM I LOGO --- */
 nav {
     display: flex;
     justify-content: space-between;
@@ -41,8 +41,26 @@ nav {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.logo { font-size: 1.5rem; font-weight: bold; }
+.logo { 
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    white-space: nowrap;
+}
+
 .logo span { color: var(--primary-color); }
+
+/* Poprawka gigantycznego logo */
+.logo-img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
 
 .menu-toggle {
     display: none;
@@ -96,7 +114,7 @@ nav ul li a:hover { color: var(--primary-color); }
 }
 .btn-main:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(46, 204, 113, 0.3); }
 
-/* --- SEKCJA O NAS --- */
+/* --- SEKCJE OGÓLNE --- */
 section { padding: 80px 10%; text-align: center; }
 h2 { font-size: 2.5rem; margin-bottom: 30px; }
 
@@ -160,11 +178,6 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; }
     box-shadow: 0 15px 40px rgba(46, 204, 113, 0.15);
 }
 
-.product-row.accessory {
-    border: 1px dashed #ccc;
-    background-color: #fafafa;
-}
-
 .product-gallery {
     flex: 1;
     background: #fdfdfd;
@@ -206,7 +219,6 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; }
     border: 1px solid #ddd;
     cursor: pointer;
 }
-
 .thumbnails img:hover { border-color: var(--primary-color); opacity: 0.8; }
 
 .product-info {
@@ -226,7 +238,6 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; }
     text-transform: uppercase;
     font-weight: bold;
 }
-
 .badge { background: var(--primary-color); color: white; }
 .badge-accessory { background: var(--dark-color); color: white; }
 
@@ -239,11 +250,9 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; }
 .product-list { list-style: none; margin: 20px 0; }
 .product-list li { margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
 .product-list i { color: var(--primary-color); }
-.product-list i.fa-plus { color: var(--accent-blue); }
 
 .price { font-size: 2.2rem; font-weight: bold; margin-bottom: 15px; }
 
-/* PRZYCISKI ZAKUPU */
 .product-actions {
     display: flex;
     gap: 12px;
@@ -265,110 +274,14 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; }
     gap: 8px;
     transition: 0.3s;
 }
-
 .btn-allegro { background-color: var(--allegro-color); color: white; }
 .btn-olx { background-color: var(--olx-color); color: white; }
 .btn-buy:hover { transform: translateY(-2px); opacity: 0.9; }
 
-.status { color: #e67e22; font-weight: bold; }
-
-/* --- KONTAKT (PRZYWRÓCONE KAFELKI) --- */
-.contact {
-    background-color: var(--light-bg);
-    padding: 80px 10%;
-}
-
-.contact-grid {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-
-.contact-box {
-    background: var(--white);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    flex: 1;
-    min-width: 320px;
-    max-width: 450px;
-    text-align: left;
-}
-
-.contact-box h3 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: var(--dark-color);
-}
-
-.social-links, .direct-links {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.social-icon, .contact-link {
-    text-decoration: none;
-    color: var(--dark-color);
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    transition: 0.3s;
-}
-
-.social-icon i, .contact-link i {
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    width: 25px;
-    text-align: center;
-}
-
-.social-icon:hover, .contact-link:hover {
-    color: var(--primary-color);
-    transform: translateX(5px);
-}
-
-/* --- STOPKA --- */
-footer {
-    padding: 40px;
-    background: var(--dark-color);
-    color: var(--white);
-    text-align: center;
-}
-
-/* --- RESPONSYWNOŚĆ --- */
-@media (max-width: 768px) {
-    .menu-toggle { display: block; }
-    
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background: white;
-        padding: 20px 0;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    }
-
-    nav ul.active { display: flex; }
-    nav ul li { margin: 10px 0; width: 100%; text-align: center; }
-    nav ul li a { margin-left: 0; font-size: 1.1rem; }
-
-    .product-row { flex-direction: column; }
-    .story-container { flex-direction: column; }
-    .hero h1 { font-size: 2.2rem; }
-    .main-view-container { height: 280px; }
-    .product-info { padding: 30px; }
-}
 /* --- SEKCJA AKCESORIÓW (GRID) --- */
 .accessories-section {
-    background-color: #fff;
-    padding: 60px 10%;
+    background-color: var(--light-bg);
+    padding: 80px 10%;
     text-align: center;
 }
 
@@ -380,7 +293,7 @@ footer {
 }
 
 .acc-card {
-    background: #fff;
+    background: var(--white);
     border: 1px solid #eee;
     padding: 20px;
     border-radius: 15px;
@@ -389,11 +302,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
-.acc-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-}
+.acc-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
 
 .acc-card img {
     width: 120px;
@@ -403,10 +312,7 @@ footer {
     border-radius: 10px;
 }
 
-.acc-card h4 {
-    font-size: 1rem;
-    margin-bottom: 5px;
-}
+.acc-card h4 { font-size: 1rem; margin-bottom: 5px; }
 
 .acc-card p {
     font-size: 0.85rem;
@@ -431,19 +337,89 @@ footer {
     font-weight: bold;
     transition: 0.3s;
 }
+.btn-buy-sm:hover { background: var(--primary-color); }
 
-.btn-buy-sm:hover {
-    background: var(--primary-color);
+/* --- KONTAKT --- */
+.contact {
+    background-color: var(--light-bg);
+    padding: 80px 10%;
 }
 
-/* RWD dla siatki */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-box {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 320px;
+    max-width: 450px;
+    text-align: left;
+}
+
+.contact-box h3 { margin-bottom: 20px; font-size: 1.5rem; }
+
+.social-links, .direct-links { display: flex; flex-direction: column; gap: 15px; }
+
+.social-icon, .contact-link {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+.social-icon i, .contact-link i { color: var(--primary-color); width: 25px; text-align: center; }
+.social-icon:hover, .contact-link:hover { color: var(--primary-color); transform: translateX(5px); }
+
+/* --- STOPKA --- */
+footer {
+    padding: 40px;
+    background: var(--dark-color);
+    color: var(--white);
+    text-align: center;
+}
+
+/* --- RESPONSYWNOŚĆ --- */
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    nav ul.active { display: flex; }
+    nav ul li { margin: 10px 0; width: 100%; text-align: center; }
+    nav ul li a { margin-left: 0; font-size: 1.1rem; }
+
+    .logo { font-size: 1.2rem; }
+    .logo-img { height: 40px; width: 40px; }
+
+    .product-row { flex-direction: column; }
+    .story-container { flex-direction: column; }
+    .hero h1 { font-size: 2.2rem; }
+    .main-view-container { height: 280px; }
+}
+
 @media (max-width: 600px) {
     .accessories-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 produkty w rzędzie na komórce */
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
-    .acc-card img {
-        width: 80px;
-        height: 80px;
-    }
+    .acc-card img { width: 80px; height: 80px; }
 }
