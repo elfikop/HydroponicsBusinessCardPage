@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydroponikaZestawy.pl - Autorskie Wieże Hydroponiczne</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Hydroponika<span>Zestawy.pl</span></div>
+            <button class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="nav-list">
+                <li><a href="#o-nas">O projekcie</a></li>
+                <li><a href="#oferta">Zestawy</a></li>
+                <li><a href="#kontakt">Kontakt/Media</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Uprawiaj wyżej, nie szerzej. 🌿</h1>
+            <p>Autorskie wieże hydroponiczne do Twojego domu. Kompletne zestawy gotowe do startu.</p>
+            <a href="#oferta" class="btn-main">Sprawdź zestawy</a>
+        </div>
+    </header>
+
+    <section id="o-nas" class="about">
+    <h2>Projekt Autorski & Polska Jakość</h2>
+    
+    <div class="story-container">
+        <div class="story-text">
+            <h3>Od studenckiej pasji do własnego ogrodu</h3>
+            <p>
+                Wszystko zaczęło się od prostego marzenia – chciałem założyć własną farmę hydroponiczną. 
+                Szukając idealnego rozwiązania do uprawy domowej, szybko zderzyłem się z rynkową rzeczywistością. 
+                Dostępne wieże hydroponiczne były albo zbyt skomplikowane, albo niebotycznie drogie, co 
+                skutecznie zniechęcało do rozpoczęcia przygody z nowoczesnym ogrodnictwem na balkonie czy tarasie.
+            </p>
+            <p>
+                Jako <strong>student informatyki na Politechnice Wrocławskiej</strong> i pasjonat druku 3D, 
+                postanowiłem wziąć sprawy w swoje ręce. Wykorzystałem swoją wiedzę techniczną, by samodzielnie 
+                zaprojektować konstrukcję, która będzie prosta, funkcjonalna i przystępna cenowo.
+            </p>
+            <p>
+                Działam prywatnie na terenie Polski. Każdy element zestawu – od wieży po pompę i keramzyt – 
+                kompletuję osobiście. Obecnie projekt jest w fazie intensywnych testów, aby zapewnić najwyższą jakość zbiorów.
+            </p>
+            <p>
+                Jeżeli trafili tu państwo <strong>przed rozpoczęciem sprzedaży</strong>, zapraszam do kontaktu na 
+                <a href="https://www.instagram.com/hydroponikazestawy.pl?igsh=anFrM3ZwcW92bDFi&utm_source=qr" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">Instagramie</a> 
+                – mogę ewentualnie zaproponować przedsprzedaż lub pokazać postępy prac.
+            </p>
+            <div class="info-alert">
+                <i class="fas fa-info-circle"></i> 
+                Pamiętaj: strona ma charakter informacyjny. Po kliknięciu w wybrany zestaw zostaniesz 
+                bezpiecznie przekierowany do zakupu na <strong>Allegro/OLX</strong>.
+            </div>
+        </div>
+            <div class="story-features">
+                <div class="feature-item">
+                    <i class="fas fa-microchip"></i>
+                    <h4>Projekt Autorski</h4>
+                    <p>Konstrukcja stworzona od zera pod druk 3D.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-box-open"></i>
+                    <h4>Pełne Zestawy</h4>
+                    <p>Wieża, pompa, rurki, koszyczki i keramzyt w jednej paczce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="oferta" class="pricing">
+        <h2>Wybierz swój zestaw</h2>
+        <div class="product-container">
+            
+            <div class="product-row featured">
+                <div class="product-gallery">
+                    <div class="main-view-container">
+                        <img src="standard1.jpg" alt="Wieża Standard" class="main-img" id="mainViewStandard">
+                    </div>
+                    <div class="thumbnails">
+                        <img src="standard1.jpg" onclick="updateImage('mainViewStandard', 'standard1.jpg')">
+                        <img src="standard2.jpg" onclick="updateImage('mainViewStandard', 'standard2.jpg')">
+                        <img src="koszyczki.jpg" onclick="updateImage('mainViewStandard', 'koszyczki.jpg')">
+                        <img src="kermazyt.png" onclick="updateImage('mainViewStandard', 'kermazyt.png')">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="badge">Najpopularniejszy</div>
+                    <h3>Model STANDARD</h3>
+                    <div class="slots">12 miejsc na rośliny</div>
+                    <ul class="product-list">
+                        <li><i class="fas fa-check"></i> 2 Moduły (12 otworów)</li>
+                        <li><i class="fas fa-check"></i> 12 koszyczków + keramzyt</li>
+                        <li><i class="fas fa-check"></i> Pompa wody, rurka i śruby</li>
+                        <li><i class="fas fa-check"></i> Kompletny zestaw gotowy do startu</li>
+                    </ul>
+                    <div class="price">145 zł</div>
+                    <div class="product-actions">
+                        <a href="https://allegro.pl" target="_blank" class="btn-buy btn-allegro">Allegro</a>
+                        <a href="https://www.olx.pl" target="_blank" class="btn-buy btn-olx">OLX</a>
+                    </div>
+                    <p class="status">Faza testów – Sprzedaż wkrótce!</p>
+                </div>
+            </div>
+
+            <div class="product-row">
+                <div class="product-gallery">
+                    <div class="main-view-container">
+                        <img src="nano_glowny.png" alt="Model NANO" class="main-img" id="mainViewNano">
+                    </div>
+                    <div class="thumbnails">
+                        <img src="nano_glowny.png" onclick="updateImage('mainViewNano', 'nano_glowny.png')">
+                        <img src="koszyczki.jpg" onclick="updateImage('mainViewNano', 'koszyczki.jpg')">
+                        <img src="kermazyt.png" onclick="updateImage('mainViewNano', 'kermazyt.png')">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Model NANO</h3>
+                    <div class="slots">6 miejsc na rośliny</div>
+                    <p>Kompaktowy wariant na kuchenny blat. Świeże zioła przez cały rok.</p>
+                    <ul class="product-list">
+                        <li><i class="fas fa-check"></i> 1 Moduł (6 otworów)</li>
+                        <li><i class="fas fa-check"></i> 6 koszyczków + keramzyt</li>
+                        <li><i class="fas fa-check"></i> Kompletna elektronika (pompa, rurki)</li>
+                    </ul>
+                    <div class="price">99 zł</div>
+                    <div class="product-actions">
+                        <a href="https://allegro.pl" target="_blank" class="btn-buy btn-allegro">Allegro</a>
+                        <a href="https://www.olx.pl" target="_blank" class="btn-buy btn-olx">OLX</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-row">
+                <div class="product-gallery">
+                    <div class="main-view-container">
+                        <img src="max_glowny.png" alt="Model MAX" class="main-img" id="mainViewMax">
+                    </div>
+                    <div class="thumbnails">
+                        <img src="max_glowny.png" onclick="updateImage('mainViewMax', 'max_glowny.png')">
+                        <img src="max_detal.png" onclick="updateImage('mainViewMax', 'max_detal.png')">
+                        <img src="koszyczki.jpg" onclick="updateImage('mainViewMax', 'koszyczki.jpg')">
+                        <img src="kermazyt.png" onclick="updateImage('mainViewMax', 'kermazyt.png')">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Model MAX</h3>
+                    <div class="slots">18 miejsc na rośliny</div>
+                    <p>Dla najbardziej wymagających. Maksymalna ilość plonów.</p>
+                    <ul class="product-list">
+                        <li><i class="fas fa-check"></i> Wieża XL (3 moduły, 18 otworów)</li>
+                        <li><i class="fas fa-check"></i> 18 koszyczków + keramzyt</li>
+                        <li><i class="fas fa-check"></i> Dłuższa rurka i pełny zestaw śrub</li>
+                    </ul>
+                    <div class="price">199 zł</div>
+                    <div class="product-actions">
+                        <a href="https://allegro.pl" target="_blank" class="btn-buy btn-allegro">Allegro</a>
+                        <a href="https://www.olx.pl" target="_blank" class="btn-buy btn-olx">OLX</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-row accessory">
+                <div class="product-gallery">
+                    <div class="main-view-container">
+                        <img src="modul_glowny.png" alt="Moduł" class="main-img" id="mainViewModul">
+                    </div>
+                    <div class="thumbnails">
+                        <img src="modul_glowny.png" onclick="updateImage('mainViewModul', 'modul_glowny.png')">
+                        <img src="koszyczki.jpg" onclick="updateImage('mainViewModul', 'koszyczki.jpg')">
+                        <img src="sruby_detal.jpg" onclick="updateImage('mainViewModul', 'sruby_detal.jpg')">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="badge-accessory">Rozbudowa</div>
+                    <h3>Moduł Piętra</h3>
+                    <div class="slots">+6 miejsc</div>
+                    <p>Rozbuduj swoją wieżę o dodatkowy poziom w dowolnym momencie.</p>
+                    <ul class="product-list">
+                        <li><i class="fas fa-plus"></i> 1 Moduł środkowy (6 otworów)</li>
+                        <li><i class="fas fa-plus"></i> 6 koszyczków + keramzyt</li>
+                        <li><i class="fas fa-plus"></i> Komplet śrub montażowych</li>
+                    </ul>
+                    <div class="price">35 zł</div>
+                    <div class="product-actions">
+                        <a href="https://allegro.pl" target="_blank" class="btn-buy btn-allegro">Allegro</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="akcesoria" class="accessories-section">
+    <h2>Podzespoły i Akcesoria</h2>
+    <p>Potrzebujesz części zamiennych lub budujesz własny system? Wybierz to, czego potrzebujesz.</p>
+    
+    <div class="accessories-grid">
+        <div class="acc-card">
+            <img src="modul_glowny.png" alt="Wieża Nano">
+            <h4>Wieża NANO (Sama)</h4>
+            <p>1 moduł + komplet śrub</p>
+            <div class="acc-price">79 zł</div>
+            <a href="https://allegro.pl" target="_blank" class="btn-buy-sm">Kup</a>
+        </div>
+        
+        <div class="acc-card">
+            <img src="standard1.jpg" alt="Wieża Standard">
+            <h4>Wieża STANDARD (Sama)</h4>
+            <p>2 moduły + komplet śrub</p>
+            <div class="acc-price">99 zł</div>
+            <a href="https://allegro.pl" target="_blank" class="btn-buy-sm">Kup</a>
+        </div>
+
+        <div class="acc-card">
+            <img src="max_glowny.png" alt="Wieża Max">
+            <h4>Wieża MAX (Sama)</h4>
+            <p>3 moduły + komplet śrub</p>
+            <div class="acc-price">140 zł</div>
+            <a href="https://allegro.pl" target="_blank" class="btn-buy-sm">Kup</a>
+        </div>
+
+        <div class="acc-card">
+            <img src="zasilacz.png" alt="Pompka"> <h4>Pompka wody</h4>
+            <p>Z rurką i złączką</p>
+            <div class="acc-price">22 zł</div>
+            <a href="https://allegro.pl" target="_blank" class="btn-buy-sm">Kup</a>
+        </div>
+
+        <div class="acc-card">
+            <img src="koszyczki.jpg" alt="Koszyczki">
+            <h4>6 koszyczków</h4>
+            <p>Średnica 5cm, czarne</p>
+            <div class="acc-price">12 zł</div>
+            <a href="https://allegro.pl" target="_blank" class="btn-buy-sm">Kup</a>
+        </div>
+
+        <div class="acc-card">
+            <img src="kermazyt.png" alt="Keramzyt">
+            <h4>Keramzyt 400g</h4>
+            <p>Frakcja 8-16 mm</p>
+            <div class="acc-price">8 zł</div>
+            <a href="https://allegro.pl" target="_blank" class="btn-buy-sm">Kup</a>
+        </div>
+    </div>
+</section>
+
+    <section id="kontakt" class="contact">
+        <h2>Masz pytania? Napisz do nas!</h2>
+        <p>Jesteśmy nowym projektem i chętnie opowiemy więcej o naszych wieżach.</p>
+        <div class="contact-grid">
+            <div class="contact-box">
+                <h3>Obserwuj nas</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/hydroponikazestawy.pl?igsh=anFrM3ZwcW92bDFi&utm_source=qr" target="_blank" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://www.tiktok.com/@hydroponikazestawy.pl?_r=1&_t=ZN-94FiS2SafXK" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i> TikTok</a>
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+            <div class="contact-box">
+                <h3>Kontakt bezpośredni</h3>
+                <div class="direct-links">
+                    <a href="tel:+48665339661" class="contact-link"><i class="fas fa-phone"></i> +48 665 339 661</a>
+                    <a href="mailto:kontakt@hydroponikazestawy.pl" class="contact-link"><i class="fas fa-envelope"></i> kontakt@hydroponikazestawy.pl</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 HydroponikaZestawy.pl - Autorskie systemy upraw hydroponicznych</p>
+    </footer>
+
+    <script>
+        function updateImage(targetId, fileName) {
+            document.getElementById(targetId).src = fileName;
+        }
+
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.getElementById('nav-list');
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            mobileMenu.querySelector('i').classList.toggle('fa-bars');
+            mobileMenu.querySelector('i').classList.toggle('fa-times');
+        });
+
+        document.querySelectorAll('#nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+                const icon = mobileMenu.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+    </script>
+</body>
+</html>
